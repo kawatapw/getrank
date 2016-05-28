@@ -102,7 +102,8 @@ func GetRank(gameMode osuapi.Mode, mods osuapi.Mods, acc float64, c300, c100, c5
 	return "a"
 }
 
-func s(s2 bool, h osuapi.Mods) (a string) {
+func s(s2 bool, h osuapi.Mods) string {
+	a := "s"
 	if s2 {
 		a += "s"
 	}
